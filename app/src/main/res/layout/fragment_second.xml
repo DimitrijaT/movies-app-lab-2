@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_second_scene"
+    tools:context=".ui.movies.SecondFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Movie Poster -->
+        <ImageView
+            android:id="@+id/details_movie_poster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Movie Poster"
+            android:scaleType="centerCrop" />
+
+        <!-- Movie Title -->
+        <TextView
+            android:id="@+id/details_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            android:text="Movie Title"
+            android:textSize="24sp" />
+
+        <!-- Movie Year -->
+        <TextView
+            android:id="@+id/details_movie_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            android:text="Release Year"
+            android:textSize="18sp" />
+
+        <!-- Movie Genre -->
+        <TextView
+            android:id="@+id/details_movie_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            android:text="Genre"
+            android:textSize="18sp" />
+
+        <!-- Movie Director -->
+        <TextView
+            android:id="@+id/details_movie_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            android:text="Director"
+            android:textSize="18sp" />
+
+        <!-- Movie Actors -->
+        <TextView
+            android:id="@+id/details_movie_actors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+
+            android:text="Actors"
+            android:textSize="18sp" />
+
+
+        <!-- Movie Plot -->
+        <TextView
+            android:id="@+id/details_movie_plot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+
+            android:text="Plot"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>
